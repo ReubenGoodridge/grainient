@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="main" rel="stylesheet" href="./css/styles.css">
+    <title>grainient</title>
+</head>
+<body>
+    <h1>grainient</h1>
+    <div class="controls">
+        <label for="slider" id="forGrain">Grain: </label>
+        <input type="range" id="slider" min="0" max="100">
+    </div>
+    <div class="grainContain" id="grainContain">
+        <svg>
+            <filter id="filter">
+                <feTurbulence
+                id="grain"
+                type="turbulence"
+                baseFrequency="0.65"
+                />
+            </filter>
+        </svg>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

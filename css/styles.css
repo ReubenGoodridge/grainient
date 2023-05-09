@@ -1,0 +1,15 @@
+body {
+    background-color: navy;
+    color: white;
+}
+
+.controls {
+    padding-bottom: 3em;
+}
+
+.grainContain {
+    width: 250px;
+    height: 250px;
+    color: red;
+    filter: url(#filter);
+}
